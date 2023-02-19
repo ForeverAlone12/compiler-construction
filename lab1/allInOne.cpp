@@ -37,18 +37,18 @@ double getUnsignedDoubleDigit(string text) {
     return digit;
 }
 
-int main() {
+int main(int argc, char *argv[]) {
 
     cout << "Вычисление данных прямоугольника." << endl;
     cout << endl;
 
-    double width = getUnsignedDoubleDigit("Введите длину прямоугольника: ");
-    double height = getUnsignedDoubleDigit("Введите ширину прямоугольника: ");
+    double width = getUnsignedDoubleDigit("Введите длину прямоугольника [width] : ");
+    double height = getUnsignedDoubleDigit("Введите ширину прямоугольника [height] : ");
 
     cout << endl;
-    cout << "Площадь прямоугольника = " << getSquare(width, height) << endl;
-    cout << "Периметр прямоугольника = " << getPerimeter(width, height) << endl;
-    cout << "Диагональ прямоугольника = " << getDiagonalLength(width, height) << endl;
+    cout << "Площадь прямоугольника [width * height] = " << getSquare(width, height) << endl;
+    cout << "Периметр прямоугольника [2 * (width + height)] = " << getPerimeter(width, height) << endl;
+    cout << "Диагональ прямоугольника [sqrt(width * width + height * height)] = " << getDiagonalLength(width, height) << endl;
 
     return 0;
 }
